@@ -1,77 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap"
+    rel="stylesheet">
+
+
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      /* Fuente principal */
+      font-size: 16px;
+      /* Tamaño base para párrafos */
+      line-height: 1.75;
+      /* Espaciado entre líneas */
+      color: var(--stone-600);
+      /* Color principal del texto */
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Regular', young-serif;
+      /* Usar Outfit para los títulos */
+      font-weight: 700;
+      /* Peso más alto */
+      color: var(--stone-900);
+      /* Color más oscuro para los encabezados */
+    }
+
+    p,
+    li {
+      font-family: 'Regular', outfit;
+      /* Usar Young Serif para párrafos */
+      font-weight: 400;
+      /* Peso normal */
+      color: var(--stone-600);
+      /* Color de texto estándar */
+    }
+
+    strong {
+      font-weight: 600;
+      /* Usar peso medio para palabras en negrita */
+    }
+
+    li {
+      color: black; /* Color del texto de la lista */
+    }
+
+    li::marker {
+      color: hsl(14, 45%, 36%); /* Color de los números */
+      font-weight: bold; /* Ejemplo de personalización adicional */
+    }
   </style>
 </head>
-<body>
 
-  Simple Omelette Recipe
+<body style="background-color: hsl(30, 54%, 90%);">
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+  <div
+    style="background-color: hsl(30, 54%, 90%); display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: 40%; margin-bottom: 35%;">
+    <div
+      style="background-color: hsl(0, 0%, 100%); width: 45%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <div>
+        <img src="/assets/images/image-omelette.jpeg" alt="omelette" style="width: 97%; border-radius: 8px; padding-left: 2%; padding-right: 2%;">
+      </div>
+      <h1 style="padding-left: 2%; padding-right: 2%;">Simple Omelette Recipe</h1>
+      <p style="padding-left: 2%; padding-right: 2%;">An easy and quick dish, perfect for any meal. This classic omelette combines beaten
+        eggs cooked
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-  Preparation time
+      <div
+        style="padding-left: 2%; padding-right: 2%; background-color: hsl(330, 100%, 98%); padding: 10px; border-radius: 8px;">
+        <h3 style="color: hsl(332, 51%, 32%);">Preparation time</h3>
+        <ul>
+          <li><strong>Total</strong>: Approximately 10 minutes</li>
+          <li><strong>Preparation</strong>: 5 minutes</li>
+          <li><strong>Cooking</strong>: 5 minutes</li>
+        </ul>
+      </div>
 
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
+      <section style="padding-left: 2%; padding-right: 2%;">
+        <h2 style="color: hsl(14, 45%, 36%);">Ingredients</h2>
+        <ul>
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </section>
 
-  Ingredients
+      <hr>
+      <section style="padding-left: 2%; padding-right: 2%;">
+        <h2 style="color: hsl(14, 45%, 36%);">Instructions</h2>
+        <ol>
+          <li><strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are
+            well
+            mixed.
+            You can add a tablespoon of water or milk for a fluffier texture.</li>
+          <li><strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li><strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan
+            to ensure
+            the eggs evenly coat the surface.
+          </li>
+          <li><strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly
+            runny in the
+            middle, sprinkle your chosen fillings over one half of the omelette.</li>
+          <li><strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it
+            over
+            the
+            fillings. Let it cook for another minute, then slide it onto a plate.</li>
+          <li><strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </section>
+      <hr>
+      <section style="padding-left: 2%; padding-right: 2%;">
+        <h2 style="color: hsl(14, 45%, 36%);">Nutrition</h2>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <div style="display: inline-flex; justify-content: space-between; width: 100%;">
+          <p>Calories</p>
+          <p style="color: hsl(14, 45%, 36%)"><strong>277kcal</strong></p>
+        </div>
+        <hr>
+        <div style="display: inline-flex; justify-content: space-between; width: 100%;">
+          <p>Carbs</p>
+          <p style="color: hsl(14, 45%, 36%)"><strong>0g</strong></p>
+        </div>
+        <hr>
+        <div style="display: inline-flex; justify-content: space-between; width: 100%;">
+          <p>Protein</p>
+          <p style="color: hsl(14, 45%, 36%)"><strong>20g</strong></p>
+        </div>
+        <hr>
+        <div style="display: inline-flex; justify-content: space-between; width: 100%;">
+          <div>
+            <p>Fat</p>
+          </div>
+          <div style="text-align:left;">
+            <p style="color: hsl(14, 45%, 36%)"><strong>22g</strong></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
